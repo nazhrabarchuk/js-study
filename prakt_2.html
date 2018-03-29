@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style_2.css">
+    
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="js/js_prakt_2.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="Block">
+            <div id="BlockWindow">
+                <form name='formPassword' id="formPassword">
+                    Для розблокування введіть <i>password</i>:
+                    <br>
+                    <input type="text" id="password">
+                    <input type="button" id="Enter" value="Enter">
+                </form>
+                <h2 id="WrongPassword">Пароль невірний!</h2>
+                <input type="button" id="RepeatPass" value="Enter again">
+            </div>
+        </div>
+        <div id="header">
+            <form name='formMenu' id="formMenu">
+                <input type="button" name="button" id="BtnEdit" value="Edit">
+                <input type="button" name="button" id="BtnBold" value="B">
+                <input type="button" name="button" id="BtnItalic" value="/">
+                <input type="button" name="button" id="BtnUndlin" value="U">
+                <select name="listSize" id="listSize">
+          <option value="7pt">7pt</option>
+          <option value="8pt">8pt</option>
+          <option value="9pt">9pt</option>
+          <option value="10pt">10pt</option>
+          <option value="11pt">11pt</option>
+          <option value="12pt" selected>12pt</option>
+          <option value="14pt">14pt</option>
+          <option value="16pt">16pt</option>
+          <option value="18pt">18pt</option>
+          <option value="20pt">20pt</option>
+          <option value="30pt">30pt</option>
+          <option value="40pt">40pt</option>
+        </select>
+                <select name="listStyle" id="listStyle">
+          <option value="Georgia">Georgia</option>
+          <option value="Times New Roman" selected>Times New Roman</option>
+          <option value="Arial">Arial</option>
+          <option value="SEGOE PRINT">SEGOE PRINT</option>
+          <option value="Comic Sans MS">Comic Sans MS</option>
+          <option value="Tahoma">Tahoma</option>
+          <option value="Verdana">Verdana</option>
+          <option value="MV BOLI">MV BOLI</option>
+          <option value="Trebuchet MS">Trebuchet MS</option>
+          <option value="Impact">Impact</option>
+          <option value="Florence, cursive">Florence</option>
+          <option value="TEMPUS SANS ITC">TEMPUS SANS ITC</option>
+          <option value="wide latin">wide latin</option>
+        </select>
+                <input type="button" name="button" id="BtnColor" value="Color">
+                <input type="button" name="button" id="BtnBgrnd" value="Background">
+                <label for="radioLeft"><input type="radio" name="radioList" id = 'radioLeft' checked>left</label>
+                <label for="radioCenter"><input type="radio" name="radioList" id = 'radioCenter'>center</label>
+                <label for="radioRight"><input type="radio" name="radioList" id = 'radioRight'>right</label>
+                <input type="button" name="button" id="BlockButton" value="Block">
+            </form>
+        </div>
+        <div id="EditFormSelect">
+            <form name='formEdit' id="formEdit">
+                <input type="button" name="SaveBtn" id="SaveBtn" value="Save">
+                <input type="button" name="CreateTableBtn" id="CreateTableBtn" value="Create Table">
+                <input type="button" name="CreateListBtn" id="CreateListBtn" value="Create List">
+            </form>
+        </div>
+    </header>
+    <div id="content">
+    <div id="contentText">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> 
+    Mollitia aperiam beatae dolore exercitationem harum <br>
+    incidunt consequatur quam distinctio earum praesentium,<br>
+    quaerat animi quidem cupiditate vel odit, soluta<br> 
+    voluptatibus aspernatur doloribus neque, officiis at<br>
+    voluptates accusantium ducimus repellat. Officiis veniam<br>
+    temporibus odio nisi, adipisci laudantium sed<br> 
+    sequi perferendis id ipsam! Possimus eum, quis dolorem <br> 
+    placeat aspernatur aliquam mollitia doloremque explicabo<br>
+    nemo aut eveniet ipsa accusantium asperiores<br> 
+    officiis repellendus voluptate odit eaque <br>
+    sapiente minima ut repellat, quo autem quisquam? Ducimus <br> 
+    facilis, animi voluptatem, numquam debitis, dolor dolorem<br>
+    at fuga totam necessitatibus, fugit dolore!<br>
+    Quidem officia consequatur, inventore dicta. Provident <br> 
+    consequatur illum accusamus consequuntur adipisci <br>
+    distinctio at eligendi similique nulla fugit in culpa<br>
+    possimus iusto nihil quasi eos doloribus sed repellat ipsam <br>
+    deserunt maxime tempore vero repellendus, voluptates.<br> 
+    Quis ad laudantium asperiores labore quas dolor saepe <br> 
+    molestias fugiat eveniet accusantium dolore magnam, <br>
+    necessitatibus at, eligendi beatae unde illo?</p>
+    </div>
+        <div id="TextColChange">
+            <div class="TextCol"></div>
+            <div class="TextCol"></div>
+            <div class="TextCol"></div>
+            <div class="TextCol"></div>
+            <div class="TextCol"></div>
+            <div class="TextCol"></div>
+            <div class="TextCol"></div>
+            <div class="TextCol"></div>
+            <div class="TextCol"></div>
+        </div>
+        <div id="BgColChange">
+            <div class="BtnBgCol">
+                <input type="button" name="BtnBgCol" id="BtnBgCol" value="Background color">
+            </div>
+            <div class="bgImg i1"></div>
+            <div class="bgImg i2"></div>
+            <div class="bgImg i3"></div>
+            <div class="bgImg i4"></div>
+            <div class="bgImg i5"></div>
+            <div class="bgImg i6"></div>
+            <div class="bgImg i7"></div>
+            <div class="bgImg i8"></div>
+            <div class="bgImg i9"></div>
+            <label for="ChoseFile">Загрузити файл: <input type="file" id="ChoseFile" name = 'background-image'></label>
+        </div>
+        <div id="BgColorOnly">
+            <div class="BtnBgImg">
+                <input type="button" name="BtnBgImg" id="BtnBgImg" value="Background image">
+            </div>
+            <div class="bgCol"></div>
+            <div class="bgCol"></div>
+            <div class="bgCol"></div>
+            <div class="bgCol"></div>
+            <div class="bgCol"></div>
+            <div class="bgCol"></div>
+            <div class="bgCol"></div>
+            <div class="bgCol"></div>
+            <div class="bgCol"></div>
+        </div>
+        <textarea name="textarea" id="textArea"></textarea>
+    </div>
+
+
+    <div id="CreateTable">
+        <form name="formCrTable" id="formCrTable">
+            <label for="CountTr">К-сть рядків:<input type="text" id="CountTr" name="reset"></label>
+            <label for="CountTd">К-сть стовпців:<input type="text"  id="CountTd" name="reset"></label>
+            <br>
+            <br>
+            <label for="TbWidth">Ширина:<input type="text" id="TbWidth" name="reset"></label>
+            <label for="TbHeight">Висота:<input type="text" id="TbHeight" name="reset"></label>
+            <br>
+            <br>
+            <label for="CellSpace">cellspacing:<input type="text" id="CellSpace" name="reset"></label>
+            <br>
+            <br>
+            <label for="TbWeight">Товщина рамки:<input type="text" id="TbWeight" name="reset"></label>
+            <label for="TbColor">Колір рамки:<input type="text" id="TbColor" name="reset"></label>
+            <br>
+            <br>
+            <input type="button" value="Скинути" id="ResetTbBtn">
+            <input type="button" value="Зберегти" id="SaveTableBtn">
+        </form>
+        <p id='spanError'></p>
+        <p id='qwe'></p>
+    </div>
+    <div id="CreateOlList">
+        <form name='formCreateOl' id="formCreateOl">
+            Тип списку: <label for="typeListR1"><input type="radio" name="r1" id="typeListR1" value="ol" checked>ol</label><label for="typeListR2"><input type="radio" name="r1" id="typeListR2" value="ul">ul</label>
+            <br>
+            <br> Тип маркера: <select name="selectMarkerType" id="selectMarkerType">
+            <option value="default">default</option>
+            <option value="A" selected>A</option>
+            <option value="a">a</option>
+            <option value="I">I</option>
+            <option value="i">i</option>
+        </select>
+            <select name="selectMarkerTypeUl" id="selectMarkerTypeUl">
+            <option value="disc" selected>disc</option>
+            <option value="square">square</option>
+            <option value="circle">circle</option>
+        </select>
+            <br>
+            <br>
+            <label for="ItemCount">К-сть айтемів: <input type="text" id="ItemCount"></label>
+            <br>
+            <br>
+            <input type="button" value="Скинути" id="ResetOlBtn">
+            <input type="button" value="Зберегти" id="SaveOlBtn">
+        </form>
+        <p id="ErrorP">*дане поле заповнене некоректно або пусте</p>
+    </div>
+</body>
+
+</html>

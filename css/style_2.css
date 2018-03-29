@@ -1,0 +1,400 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {}
+
+header {
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, gray, white);
+    border-bottom: 1px solid black;
+}
+
+#wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#header,
+#EditFormSelect {
+    width: 950px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+#EditFormSelect {
+    width: 500px;
+    height: 100px;
+    display: none;
+}
+
+#BtnEdit,
+#BtnBold,
+#BtnItalic,
+#BtnUndlin,
+#BtnColor,
+#BtnBgrnd,
+#SaveBtn,
+#CreateTableBtn,
+#CreateListBtn,
+#BlockButton {
+    width: 80px;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: bold;
+    background-color: orange;
+}
+
+#BlockButton {
+    margin-left: 40px;
+    background-color: red;
+}
+
+
+#listSize,
+#listStyle,
+#selectMarkerType,
+#selectMarkerTypeUl {
+    border-radius: 10px;
+    background-color: aquamarine;
+    font-size: 11px;
+    transition: 0.2s;
+    height: 25px
+}
+
+#selectMarkerTypeUl {
+    display: none;
+}
+
+#listSize {
+    width: 50px;
+}
+
+#listStyle {
+    width: 117px;
+}
+
+#listSize:hover,
+#listStyle:hover,
+#BtnEdit:hover,
+#BlockButton:hover,
+#BtnBold:hover,
+#BtnItalic:hover,
+#BtnUndlin:hover,
+#BtnColor:hover,
+#BtnBgrnd:hover,
+#SaveBtn:hover,
+#CreateTableBtn:hover,
+#CreateListBtn:hover,
+#BtnBgImg:hover, #BtnBgCol:hover
+{
+    background-color: aqua;
+    transition: 0.2s;
+}
+
+#content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#contentText {
+    width: 100%;
+    display: block;
+    margin: 20px;
+}
+
+#TextColChange,
+#BgColChange,
+#BgColorOnly {
+    width: 310px;
+    height: 280px;
+    position: absolute;
+    top: 150px;
+    right: 700px;
+    display: none;
+    flex-wrap: wrap;
+    border: 7px solid gray;
+    border-radius: 10px;
+    background-color: white;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.TextCol {
+    width: 98px;
+    height: 88px;
+}
+
+.bgCol {
+    width: 101px;
+    height: 88px;
+}
+
+.bgImg {
+    width: 125px;
+    height: 95px;
+}
+
+.i1 {
+    background-image: url(img/i1.jpg);
+    background-size: cover;
+}
+
+.i2 {
+    background-image: url(img/i2.jpg);
+    background-size: cover;
+}
+
+.i3 {
+    background-image: url(img/i3.jpg);
+    background-size: cover;
+}
+
+.i4 {
+    background-image: url(img/i4.jpg);
+    background-size: cover;
+}
+
+.i5 {
+    background-image: url(img/i5.jpg);
+    background-size: cover;
+}
+
+.i6 {
+    background-image: url(img/i6.jpg);
+    background-size: cover;
+}
+
+.i7 {
+    background-image: url(img/i7.jpg);
+    background-size: cover;
+}
+
+.i8 {
+    background-image: url(img/i8.jpg);
+    background-size: cover;
+}
+
+.i9 {
+    background-image: url(img/i9.jpg);
+    background-size: cover;
+}
+
+#BtnBgImg,
+#BtnBgCol {
+    display: none;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: bold;
+    background-color: orange;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.BtnBgImg,
+.BtnBgCol {
+    display: none;
+    width: 100%;
+    height: 41px;
+}
+
+
+#textArea {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+#CreateTable,
+#CreateOlList {
+    width: 300px;
+    height: 190px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 12px;
+    position: absolute;
+    top: 200px;
+    right: 650px;
+    background-color: white;
+    display: none;
+}
+
+.errorPoint {
+    border: 1.2px solid red;
+}
+
+#spanError {
+    margin-top: 5px;
+    color: red;
+    text-align: center;
+    font-size: 14px;
+}
+
+#CreateOlList {
+    width: 230px;
+    height: 170px;
+    font-size: 13px;
+    right: 680px;
+}
+
+#ErrorP {
+    color: red;
+    display: none;
+    text-align: center;
+}
+
+#formCrTable,
+#formCreateOl {
+    display: block;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+#CountTr,
+#CountTd,
+#TbWidth,
+#TbHeight,
+#CellSpace,
+#TbWeight,
+#TbColor,
+#ItemCount {
+    width: 40px;
+    border-radius: 4px;
+    padding-left: 5px;
+    margin-left: 5px;
+}
+
+#CountTr {
+    margin-left: 22px;
+}
+
+#TbWidth {
+    margin-left: 42px;
+}
+
+#TbHeight {
+    margin-left: 44px;
+}
+
+#CellSpace {
+    margin-left: 31px;
+}
+
+#TbColor {
+    margin-left: 17px;
+}
+
+#typeListR1,
+#typeListR2 {
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+#selectMarkerType,
+#selectMarkerTypeUl {
+    margin-left: 10px;
+}
+
+#ResetTbBtn,
+#SaveTableBtn,
+#ResetOlBtn,
+#SaveOlBtn {
+    width: 60px;
+    height: 25px;
+    border-radius: 10px;
+    font-size: 10px;
+}
+
+#ResetTbBtn,
+#SaveOlBtn {
+    margin-left: 40px;
+}
+
+#SaveTableBtn {
+    margin-left: 70px;
+}
+
+ol,
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#Block {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(128, 128, 128, 0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+#BlockWindow {
+    width: 300px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 10px;
+    position: relative;
+    background-color: white;
+    display: block;
+    z-index: 3;
+    text-align: center;
+}
+
+#formPassword {
+    margin-top: 40px;
+}
+
+#password {
+    display: block;
+    margin-top: 10px;
+    margin-left: 70px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#Enter,
+#RepeatPass {
+    width: 60px;
+    height: 25px;
+    border-radius: 10px;
+    font-size: 11px;
+
+}
+
+#WrongPassword {
+    display: none;
+    margin-top: 60px;
+    color: red;
+}
+
+#RepeatPass {
+    display: none;
+    width: 70px;
+    margin: auto;
+    margin-top: 20px;
+}
